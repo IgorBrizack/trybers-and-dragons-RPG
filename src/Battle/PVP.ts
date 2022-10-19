@@ -18,12 +18,7 @@ export default class PVP extends Battle {
         isFighting = !isFighting;
       }
     }
-    return this.winner();
-  }
-
-  winner():number {
-    if (this.player1.lifePoints < 0) return -1;
-    return 1;
+    return super.fight();
   }
 }
 

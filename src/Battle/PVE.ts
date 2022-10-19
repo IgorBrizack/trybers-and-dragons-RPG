@@ -16,16 +16,6 @@ export default class PVE extends Battle {
         el.attack(this.fighter);
       }
     });
-    if (this.fighter.lifePoints < 0) return -1;
-    return 1;
+    return super.fight();
   }
-
-  // monstersHp(): number {
-  //   const HP = this.monsters.reduce((
-  //     acc: number,
-  //     el: Fighter | SimpleFighter,
-  //   ) =>
-  //     acc + el.lifePoints, 0);
-  //   return HP;
-  // }
 }
